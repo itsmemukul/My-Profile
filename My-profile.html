@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mukul Rai</title>
+</head>
+
+<body>
+    <div class="card">
+        <section class="main">
+            <p class="name">Mukul Rai</p>
+            <p>UX/UI Designer</p>
+            <p>Web Developer</p>
+        </section>
+
+        <section class="more">
+            <p>discover more about me...</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/mukul.rai.73345" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+
+                <a href="https://github.com/itsmemukul" class="github">
+                    <i class="fab fa-github"></i>
+
+                <a href="https://twitter.com/its_memukul" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/its_memukul/" class="googleplus">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="info">
+            <section>
+                <p>Age</p>
+                <p class="value">19</p>
+            </section>
+            <section>
+                <p>Place</p>
+                <p class="value">Gurgaon , India</p>
+            </section>
+
+            <button id="openerBtn">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+            </button>
+        </section>
+    </div>
+
+</body>
+
+<script>
+    var buttonEl = document.getElementById('openerBtn');
+    var cardEl = document.querySelector('.card');
+
+    buttonEl.addEventListener('click', function() {
+        cardEl.classList.toggle('opened');
+    })
+</script>
+
+</html>
